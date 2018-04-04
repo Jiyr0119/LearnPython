@@ -13,4 +13,39 @@ def enroll(name,gender,age=6,city='BeiJing'):
 	print('age:',age)
 	print('city:',city)
 
-enroll('Jonathan','man',18,'Shanxi')
+enroll('Jonathan','man',city='Shanxi')
+
+def add_end(L=[]):
+	L.append('end')
+	return L
+
+# print(add_end([1,2,3]))
+def add_end0(L= None):
+	if L is None:
+		L = []
+	L.append('end')
+	return L
+# print(add_end())
+# print(add_end())
+# print(add_end())
+
+# print(add_end0())
+# print(add_end0())
+
+def calc(*numbers):
+	sum = 0
+	for n in numbers:
+		# print(n)
+		# print(sum)
+		sum += n*n
+	return sum
+
+num = [1,2,3]
+print(calc(*num))
+
+extra = {'city'}
+def person(name,age,**kw):
+	print('name',name,'age',age,'other',kw)
+
+person('jonathon',18)
+person('Adam', 45, gender='M', job='Engineer')
