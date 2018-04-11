@@ -15,3 +15,14 @@ elif <条件判断3>:
     <执行3>
 else:
     <执行4>
+
+# 判断数据类型  
+	isinstance(object, classinfo)
+	数字分为 int 和 float，暂未发现二者共同的有效父类。可以用 (int, float) tuple 来判断是否为数字（int 或 float）   
+	isinstance(3.0, (int, float))    Truez
+
+	字符串，分为 str 和 unicode，二者均继承自 basestring
+	isinstance(u'3.0', unicode)
+	True
+	isinstance('3.0', str)
+	True
