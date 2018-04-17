@@ -8,15 +8,15 @@ def test():
 		b = i + [0]
 		i = [a[c] + b[c] for c in range(0,len(a))]
 
-#data = test()
-#print(next(data))
-# for i in data:
-# 	print(i)
+data = test()
+print(next(data))
+for i in data:
+	print(i)
 
-a = [1,2,3,4,5,6,7,8,9]
+# a = [1,2,3,4,5,6,7,8,9]
 
-b = [2,3,4,5,6,7,8,9,10]
+# b = [2,3,4,5,6,7,8,9,10]
 
-c = [a[i] + b[j] for i in range(0,len(a)) for j in range(0,len(b))]
+# c = [a[i] + b[j] for i in range(0,len(a)) for j in range(0,len(b))]
 
-print(c)
+# print(c)sss
