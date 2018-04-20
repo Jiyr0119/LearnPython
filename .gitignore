@@ -59,5 +59,6 @@ typings/
 
 /.vscode
 /.idea
+/._pycache_
 
 
