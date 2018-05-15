@@ -12,3 +12,4 @@ print(arr)
 strs = 'andy'
 strR=strs.replace('d','i')
 print(strR)
+print(strR)
