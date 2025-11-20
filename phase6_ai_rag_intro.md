@@ -58,6 +58,10 @@ RAG（Retrieval-Augmented Generation）是一种结合了信息检索和文本�
 - **书籍**:
   - 《深度学习》- Ian Goodfellow 等著，深度学习领域的经典教材
   - 《Natural Language Processing with Transformers》- 使用 Transformer 模型进行 NLP 的实用指南
+- **Python AI 库**:
+  - Transformers (Hugging Face) - 预训练模型库
+  - PyTorch - 深度学习框架
+  - OpenAI API - 调用GPT等模型的接口
 
 ### RAG 技术
 - **官方文档**:
@@ -74,6 +78,10 @@ RAG（Retrieval-Augmented Generation）是一种结合了信息检索和文本�
   - [Weaviate 教程](https://weaviate.io/developers/weaviate/tutorials)
 - **FAISS**:
   - [FAISS 官方教程](https://github.com/facebookresearch/faiss/wiki)
+- **Chroma**:
+  - [Chroma 官方文档](https://www.trychroma.com/)
+- **pgvector (PostgreSQL扩展)**:
+  - [pgvector GitHub](https://github.com/pgvector/pgvector)
 
 ## 实践项目
 

@@ -66,6 +66,12 @@ NoSQL 数据库不使用传统的表格关系模型，而是采用键值对、�
    - 发布/订阅模式
    - Python 客户端 redis-py 的使用
 
+3. **向量数据库** (新增 - 为AI/RAG做准备)
+   - 向量数据库概念和应用场景
+   - PostgreSQL with pgvector (向量支持)
+   - Redis 作为向量存储
+   - 专门的向量数据库 (如Pinecone, Weaviate, Milvus - 了解概念)
+
 ## 缓存技术
 
 缓存是提高应用性能的重要手段，特别是在高并发场景下。

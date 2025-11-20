@@ -101,6 +101,7 @@
    - Vector Stores: 向量存储
    - Retrievers: 检索器
    - Chains: 逻辑链
+   - Callbacks: 用于监控和调试
 
 2. **关键代码结构**:
    ```
@@ -113,8 +114,13 @@
    ├── vectordb/           # 向量数据库接口
    ├── retriever/          # 检索模块
    ├── generator/          # 回答生成模块
-   ├── ui/                 # 用户界面
-   └── utils/              # 工具函数
+   ├── ui/                 # 用户界面 (使用Streamlit或FastAPI+React)
+   ├── models/             # AI模型配置和管理
+   ├── api/                # API接口 (为前端提供服务)
+   ├── utils/              # 工具函数
+   ├── tests/              # 测试文件
+   ├── requirements.txt    # 项目依赖
+   └── docker-compose.yml  # 容器化部署配置
    ```
 
 ### 使用 LlamaIndex 的实现方案
@@ -124,6 +130,7 @@
    - Indexes: 索引结构
    - Query Engines: 查询引擎
    - Response Synthesizers: 响应合成器
+   - Postprocessors: 结果后处理
 
 2. **关键代码结构**:
    ```
@@ -135,9 +142,30 @@
    ├── indexes/            # 索引管理
    ├── query_engines/      # 查询引擎
    ├── synthesizers/       # 响应合成器
-   ├── ui/                 # 用户界面
-   └── utils/              # 工具函数
+   ├── ui/                 # 用户界面 (使用Streamlit或FastAPI+React)
+   ├── models/             # AI模型配置和管理
+   ├── api/                # API接口 (为前端提供服务)
+   ├── utils/              # 工具函数
+   ├── tests/              # 测试文件
+   ├── requirements.txt    # 项目依赖
+   └── docker-compose.yml  # 容器化部署配置
    ```
+
+### 项目实施额外考虑
+1. **AI模型服务**:
+   - 本地模型部署 (使用transformers或vLLM)
+   - API模型调用 (OpenAI, Azure OpenAI, 阿里云等)
+   - 模型缓存策略
+
+2. **性能优化**:
+   - 响应流式传输
+   - 检索结果缓存
+   - 并发处理
+
+3. **可扩展性**:
+   - 模块化架构
+   - 配置化参数
+   - 插件化设计
 
 ## 学习资源推荐
 

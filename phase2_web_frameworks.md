@@ -78,6 +78,12 @@ Python 主要有三个流行的 Web 开发框架，各有特色：
   - [Django Girls Tutorial](https://tutorial.djangogirls.org/zh/) - 非常友好的入门教程
   - [Django 教程 - 廖雪峰](https://www.liaoxuefeng.com/wiki/1016959639805600/1017045812323072) - 中文教程
 
+### 代码质量与测试工具 (新增)
+- **测试框架**: pytest, pytest-asyncio (用于异步测试)
+- **代码格式化**: black, isort
+- **代码检查**: flake8, pylint, mypy (类型检查)
+- **预提交钩子**: pre-commit (自动化代码质量检查)
+
 ## 实践项目
 
 1. **FastAPI 实践**:
@@ -104,3 +110,6 @@ Python 主要有三个流行的 Web 开发框架，各有特色：
 - 了解身份验证和授权机制
 - 熟悉 API 文档的编写和生成
 - 掌握测试方法（单元测试、集成测试）
+- API 安全最佳实践（输入验证、速率限制、CORS）
+- 异步处理和性能优化（特别是为AI模型服务做准备）
+- 错误处理和日志记录
