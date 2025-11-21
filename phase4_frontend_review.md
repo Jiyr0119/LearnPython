@@ -76,6 +76,19 @@ RESTful 是一种网络应用程序的设计风格和开发方式。
 - 响应式数据绑定
 - 组件系统
 
+## AI 时代的前端技术 (新增 - 重点)
+
+### 1. 快速原型开发工具
+对于 AI 工程师来说，快速展示模型效果至关重要。
+- **Streamlit**: 纯 Python 编写数据应用，极其适合快速构建 RAG 演示和数据仪表盘。
+- **Gradio**: 专注于机器学习模型的演示界面，几行代码即可生成 Web UI。
+
+### 2. 流式响应与实时交互
+AI 应用（如 ChatGPT）的标志性体验。
+- **Server-Sent Events (SSE)**: 处理 LLM 的流式输出 (Streaming Response)。
+- **WebSocket**: 实现更复杂的双向实时通信。
+- **Markdown 渲染**: 前端实时渲染 Markdown 内容 (如 `react-markdown`)。
+
 ## 学习资源推荐
 
 ### HTML/CSS/JavaScript 复习

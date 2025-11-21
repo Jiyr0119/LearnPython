@@ -32,6 +32,15 @@
    - 数据清洗与预处理
    - NumPy 基础 (数组操作)
 
+5. **现代 Python 开发环境** (新增 - 关键)
+   - **类型提示 (Type Hinting)**: 变量类型、函数参数与返回值类型、泛型 (List, Dict, Optional) - *这对 FastAPI 和大型项目至关重要*
+   - **虚拟环境管理**: venv (内置), poetry (推荐), conda (数据科学常用)
+   - **包管理**: pip, requirements.txt, pyproject.toml
+   - **代码质量工具**: 
+     - 格式化: black, ruff
+     - 类型检查: mypy
+     - 静态分析: flake8
+
 ## 学习资源推荐
 
 - **官方文档**: [Python 官方教程](https://docs.python.org/zh-cn/3/tutorial/index.html) - 最权威的学习资料

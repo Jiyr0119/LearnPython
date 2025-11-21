@@ -48,10 +48,11 @@ NoSQL 数据库不使用传统的表格关系模型，而是采用键值对、�
    - 范式化设计
    - 数据库规范化
 
-4. **Python 集成**
+4. **Python 集成与迁移**
    - 使用 psycopg2 或 asyncpg 连接 PostgreSQL
    - 使用 mysql-connector-python 或 PyMySQL 连接 MySQL
-   - 使用 SQLAlchemy 作为 ORM 工具
+   - 使用 SQLAlchemy 作为 ORM 工具 (核心)
+   - **数据库迁移 (Migrations)**: 使用 **Alembic** 管理数据库版本变更 (生产环境必备)
 
 ### NoSQL 数据库
 1. **MongoDB**

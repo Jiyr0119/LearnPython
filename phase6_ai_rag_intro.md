@@ -38,6 +38,19 @@ RAG（Retrieval-Augmented Generation）是一种结合了信息检索和文本�
 - **可控性**：可以通过更新知识库来控制模型的回答内容
 - **成本效益**：相比微调模型，RAG 的维护成本更低
 
+### RAG 关键技术补充 (新增)
+1. **提示工程 (Prompt Engineering)**:
+   - 零样本/少样本提示 (Zero-shot/Few-shot)
+   - 思维链 (Chain of Thought)
+   - 结构化输出 (JSON Output)
+
+2. **RAG 评估 (Evaluation)**:
+   - 如何判断 RAG 系统好不好？
+   - **Ragas / TruLens**: 自动化评估框架 (评估准确性、相关性、幻觉)
+
+3. **本地大模型 (Local LLMs)**:
+   - **Ollama**: 开发者必备，本地运行 Llama3, Mistral 等模型，方便调试且保护隐私。
+
 ## 向量数据库
 
 向量数据库是 RAG 系统中的关键组件，用于存储和检索文本的向量表示。
