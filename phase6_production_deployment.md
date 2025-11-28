@@ -91,7 +91,7 @@ services:
       - redis
     volumes:
       - ./data:/app/data
-
+  
   db:
     image: postgres:15
     environment:
@@ -100,7 +100,7 @@ services:
       POSTGRES_PASSWORD: password
     volumes:
       - postgres_data:/var/lib/postgresql/data
-
+  
   redis:
     image: redis:7-alpine
     volumes:

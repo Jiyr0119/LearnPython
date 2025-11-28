@@ -1,6 +1,6 @@
 # 第四阶段：学习前端基础（复习）
 
-作为从前端全栈工程师转型的开发者，你已经具备了前端开发的基础知识。这一阶段的目标是复习和巩固前端核心技术，并了解如何与 Python 后端进行有效交互。
+作为从前端全栈工程师转型的开发者，你已经具备了前端开发的基础知识。这一阶段的目标是复习和巩固前端核心技术，并了解如何与 Python 后端进行有效交互，特别是AI/RAG应用的前端需求。
 
 ## 复习内容
 
@@ -76,18 +76,30 @@ RESTful 是一种网络应用程序的设计风格和开发方式。
 - 响应式数据绑定
 - 组件系统
 
-## AI 时代的前端技术 (新增 - 重点)
+## AI 时代的前端技术 (重点)
 
 ### 1. 快速原型开发工具
 对于 AI 工程师来说，快速展示模型效果至关重要。
 - **Streamlit**: 纯 Python 编写数据应用，极其适合快速构建 RAG 演示和数据仪表盘。
 - **Gradio**: 专注于机器学习模型的演示界面，几行代码即可生成 Web UI。
 
-### 2. 流式响应与实时交互
+### 2. 流式响应与实时交互 (重点加强)
 AI 应用（如 ChatGPT）的标志性体验。
 - **Server-Sent Events (SSE)**: 处理 LLM 的流式输出 (Streaming Response)。
 - **WebSocket**: 实现更复杂的双向实时通信。
-- **Markdown 渲染**: 前端实时渲染 Markdown 内容 (如 `react-markdown`)。
+- **EventSource API**: 浏览器原生支持的SSE客户端
+
+### 3. AI前端特性 (重点加强)
+- **Markdown 渲染**: 前端实时渲染 Markdown 内容 (如 `react-markdown`, `marked.js`)
+- **代码高亮**: 集成 `Prism.js` 或 `highlight.js` 实现代码块高亮
+- **流式文本显示**: 模拟打字机效果显示AI响应
+- **实时进度指示**: 显示AI处理进度
+
+### 4. 与AI后端API交互最佳实践
+- **SSE处理**: 正确处理流式响应数据
+- **错误处理**: 处理AI服务可能的超时或错误
+- **用户体验**: 设计友好的加载和错误状态
+- **安全性**: API密钥管理和请求认证
 
 ## 学习资源推荐
 
@@ -108,6 +120,12 @@ AI 应用（如 ChatGPT）的标志性体验。
   - [Postman](https://www.postman.com/) - API 测试工具
   - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - 虚拟 REST API 用于测试
 
+### AI前端资源
+- [EventSource MDN文档](https://developer.mozilla.org/zh-CN/docs/Web/API/EventSource) - SSE API文档
+- [Server-Sent Events 教程](https://javascript.info/server-sent-events) - 详细SSE教程
+- [React Markdown](https://github.com/remarkjs/react-markdown) - React中渲染Markdown
+- [SSE vs WebSocket](https://www.baeldung.com/sse-vs-websocket) - 实时通信技术比较
+
 ## 实践项目
 
 1. **创建一个简单的前端页面**:
@@ -115,15 +133,18 @@ AI 应用（如 ChatGPT）的标志性体验。
    - 使用 CSS 美化页面样式
    - 使用 JavaScript 实现简单的交互功能
 
-2. **与 Python 后端 API 交互**:
-   - 使用 FastAPI 创建一个简单的 RESTful API
-   - 在前端页面中通过 Fetch API 调用后端接口
-   - 实现数据的增删改查功能
+2. **AI聊天界面** (重点项目):
+   - 实现类似ChatGPT的用户界面
+   - 使用SSE连接到Python后端的流式API
+   - 实现流式文本显示效果
+   - 集成Markdown渲染和代码高亮
+   - 添加加载状态和错误处理
 
-3. **构建一个完整的前后端分离应用**:
-   - 前端使用 HTML/CSS/JavaScript 构建用户界面
-   - 后端使用 Python 框架提供 API 服务
-   - 实现用户注册、登录、数据展示等功能
+3. **RAG应用前端**:
+   - 构建知识库问答界面
+   - 显示文档上传和处理状态
+   - 展示AI回答及相关文档片段
+   - 集成流式响应处理
 
 ## 学习重点
 
@@ -133,5 +154,6 @@ AI 应用（如 ChatGPT）的标志性体验。
 - 学会使用工具调试前后端交互问题
 - 了解现代前端框架的基本概念
 - API优先(Design-First)开发模式 (利用你已有的前端经验设计更好的API)
-- 前端与AI后端服务的交互模式 (特别是流式响应和实时数据)
+- **AI/RAG应用的前端交互模式 (特别是流式响应和实时数据)**
+- **SSE和WebSocket的使用场景和实现**
 - 使用OpenAPI规范设计API接口
